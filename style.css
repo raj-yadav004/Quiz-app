@@ -161,3 +161,10 @@ body {
 .opt.wrong{
     background-color: rgb(255, 106, 90);
 }
+
+@media (max-width:450px) {
+    .opt{
+        text-align: center;
+        padding: 0 0.2rem;
+    }
+}
