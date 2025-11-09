@@ -41,12 +41,14 @@ body {
     font-size: clamp(1rem, 5vw, 1.5rem);
     font-family: "Mulish", sans-serif;
     text-align: center;
+    transition: all 0.2s ease;
 
 }
 
 #score.updatescore {
-    font-size: 2rem;
+    font-size: clamp(1.5 rem,5vw,3rem);
     font-weight: 700;
+    
 }
 
 #start-btn {
@@ -74,7 +76,7 @@ body {
 
 #start-btn.hide-btn {
     opacity: 0;
-    visibility: hidden;
+    display: none;
     transition-delay: 0.1s;
 }
 
@@ -128,6 +130,7 @@ body {
     transition: all 0.3s ease;
 }
 
+
 #options.ShowOptions {
     opacity: 1;
     visibility: visible;
@@ -148,4 +151,13 @@ body {
     font-weight: 600;
     font-size: clamp(1rem, 2vw, 1.3rem);
 
+}
+.opt:hover{
+     background-color: #72727259;
+}
+.opt.correct{
+    background-color: rgb(127, 255, 127);
+}
+.opt.wrong{
+    background-color: rgb(255, 106, 90);
 }
